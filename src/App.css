@@ -1,3 +1,25 @@
+nav{
+  display: grid;
+  overflow:scroll;
+  grid-template-areas: "logo logo list list list";
+  background-color: white;
+}
+nav>img{
+  grid-area:logo;
+  padding-left: 80%;
+  padding-top:10px;
+}
+nav>ul{
+  grid-area:list;
+  list-style-type: none;
+  display:inline-flex;
+  gap: 10px;
+  padding-left: 10%;
+}
+
+nav>ul>li>a{
+  text-decoration: none;
+}
 .App {
   text-align: center;
 }

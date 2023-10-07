@@ -1,9 +1,10 @@
 import React from 'react'
 import littlelemon from './littlelemon.png'
+import './App.css'
 const Nav=()=>{
     return(
         <nav>
-            <img src={littlelemon} alt="littlelemon" height="50" width="50"/>
+            <img src={littlelemon} alt="littlelemon" height="40" width="40"/>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
