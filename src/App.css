@@ -1,3 +1,4 @@
+
 nav{
   display: grid;
   overflow:scroll;
@@ -20,6 +21,24 @@ nav>ul{
 nav>ul>li>a{
   text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  nav{
+    overflow:hidden;
+    background-color: red;
+  }
+  nav>img{
+    padding-top:10px;
+  }
+  nav>ul{
+    list-style-type: none;
+    gap: 10px;
+    padding-left: 10%;
+  }
+  nav>ul>li>a{
+    text-decoration: none;
+    display: inline-block;
+  }
+}
 .App {
   text-align: center;
 }
@@ -27,12 +46,6 @@ nav>ul>li>a{
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
