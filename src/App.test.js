@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+import HomePage from './Homepage';
+import Main from './Main';
+test('renders the booking form heading', () => {
+  render(<HomePage />);
+  const linkElement = screen.getByText("Special Offer");
   expect(linkElement).toBeInTheDocument();
 });
+test('testing function',()=>{
+  render(<Main/>);
+}); 
+
+

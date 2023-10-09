@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header'
 import Nav from './Nav'
-import Main from './Main'
+import ConfirmedBooking from './ConfirmedBooking'
 import Footer from './Footer'
 import HomePage from './Homepage'
 import Chicago from './Chicago'
@@ -15,7 +15,6 @@ function App() {
     <div>
       <Header/>
       <Nav/>
-      <Main/>
       <Footer/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
@@ -24,6 +23,7 @@ function App() {
         <Route path="/reservation" element={<BookingPage/>}/>
         <Route path="/order" element={<Specials/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/ConfirmedBooking" element={<ConfirmedBooking/>}/>
       </Routes>
     </div>
   );
